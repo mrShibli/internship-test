@@ -26,7 +26,7 @@
                 </div>
                 <div class="p-4">
                     <h2 class="text-white font-bold text-xl">{{ Str::limit($post->title, 20) }}</h2>
-                    <p class="text-white text-base">{{ Str::limit($post->description, 50) }} @if(strlen($post->description) > 50) <a href="#" class="text-blue-500">see more</a> @endif</p>
+                    <p class="text-white text-base">{{ Str::limit($post->description, 50) }} @if(strlen($post->description) > 50) <a href="{{ route('post', ['id' => $post->id]) }}" class="text-blue-500">see more</a> @endif</p>
                 </div>
             </div>
             @endforeach
@@ -35,6 +35,9 @@
             </div>
         </div>
 
+        <div class="bg-[#2a25aa] h-32 col-span-full rounded-2xl flex items-center justify-center">
+            <h1 class="text-white font-extrabold text-4xl"><a href="https://github.com/mrShibli/internship-test" target="_blank">Git Repo link</a></h1>
+        </div>
     </div>
 </body>
 </html>

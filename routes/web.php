@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PostController::class, 'index']);
+Route::get('/post/{id}', [\App\Http\Controllers\PostController::class, 'post'])->name('post');
 
 Auth::routes();
 

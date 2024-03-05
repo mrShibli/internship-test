@@ -9,11 +9,11 @@
     <div class="grid grid-cols-6 m-5 gap-3">
         <!-- Header -->
         <div class="bg-[#2a25aa] h-32 col-span-full rounded-2xl flex items-center justify-center">
-            <h1 class="text-white font-extrabold text-4xl">Start - 2:45PM | End - 3-23PM</h1>
+            <h1 class="text-white font-extrabold text-4xl p-3">Start - 2:45PM | End - 3-23PM</h1>
         </div>
     
         <!-- Sidebar -->
-        <div class="bg-[#2a25aa] rounded-2xl h-[calc(100vh - 32px)] col-span-1 flex items-center justify-center">
+        <div class="bg-[#2a25aa] rounded-2xl h-[calc(100vh - 32px)] col-span-6 p-3 md:col-span-1 flex items-center justify-center">
             <p class="text-white text-lg">Name : Shibli Raihan</p>
         </div>
     
